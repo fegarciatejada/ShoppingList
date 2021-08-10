@@ -1,12 +1,4 @@
-/**
- * @author YINGJIN CUI
- * @version 1.0 since 2020-03
- *
- *          Student name: Fernanda Garcia Completion date: 11/17
- *
- *          ShoppingList.txt: the template file of ShoppingList.java Student
- *          tasks: implement tasks #1, #2 and #3 as specified in this file
- */
+
 
 public class ShoppingList {
 	private Item[] list;
@@ -18,19 +10,7 @@ public class ShoppingList {
 
 	public void insert(Item item) {
 
-		// *** Student task #1 ***
-
-		/*
-		 * Requirements:
-		 * 
-		 * 1. if null item is not allowed: do nothing if null 2. if the list is full,
-		 * double the array size-dynamic array allocation 3. No duplicated items-all
-		 * items' names must be unique. If an item with the same name already exists in
-		 * the list, simply add quantity to the existing item in the list 4. insert the
-		 * item to the array to maintain sorted-items are sorted based on item names.
-		 *** 
-		 * Enter your code below ***
-		 */
+	
 		if (this.isFull())
 			this.doubling();
 
@@ -63,17 +43,7 @@ public class ShoppingList {
 
 	public void remove(Item item) {
 
-		// *** Student task #2 ***
-
-		/*
-		 * Requirements:
-		 * 
-		 * 1. If item not found(item name), display the item does not exists in the list
-		 * otherwise, remove the item from the list. 2. Hint: You do need to shift all
-		 * items after removed one.
-		 *** 
-		 * Enter your code below ***
-		 */
+		
 		int index = indexOf(item);
 		if (index == -1)
 			System.out.println("The item does not exists in the list.");
@@ -86,17 +56,7 @@ public class ShoppingList {
 	}
 
 	public void remove(String name) {
-		// *** Student task #3 ***
-
-		/*
-		 * Requirements:
-		 * 
-		 * 1. If item not found(item name), display the item does not exists in the list
-		 * otherwise, remove the item from the list. 2. Hint: You do need to shift all
-		 * items after removed one.
-		 *** 
-		 * Enter your code below ***
-		 */
+		
 
 		int index = indexOf(name);
 		if (index == -1)
