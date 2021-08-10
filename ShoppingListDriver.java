@@ -1,10 +1,4 @@
-/**
-* @author YINGJIN CUI
-* @version 1.0
-* since   2020-03
-*
-* ShoppingListDriver.java: the driver program for ShoppingList class.
-*/
+
 
 public class ShoppingListDriver{
 
